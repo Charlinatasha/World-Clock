@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Clock</title>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
+
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
@@ -20,32 +23,32 @@
       </select>
 
       <div class="city">
-        <div class="city/date">
+        <div class="city/date" id="sydney">
           <h2>Sydney 🇦🇺</h2>
-          <div class="date">February 13th, 2025</div>
+          <div class="date" id="sydney-date">February 13th, 2025</div>
         </div>
-        <div class="time">10:07:37 <small>PM</small></div>
+        <div class="time" id="sydney-time">10:07:37 <small>PM</small></div>
       </div>
       <div class="city">
-        <div class="city/date">
+        <div class="city/date" id="new-york">
           <h2>New York 🇺🇸</h2>
-          <div class="date">February 13th, 2025</div>
+          <div class="date" id="new-york-date">February 13th, 2025</div>
         </div>
-        <div class="time">10:07:37 <small>PM</small></div>
+        <div class="time" id="new-york-time">10:07:37 <small>PM</small></div>
       </div>
       <div class="city">
-        <div class="city/date">
+        <div class="city/date" id="tokyo">
           <h2>Tokyo 🇯🇵</h2>
-          <div class="date">February 13th, 2025</div>
+          <div class="date" id="tokyo-date">February 13th, 2025</div>
         </div>
-        <div class="time">10:07:37 <small>PM</small></div>
+        <div class="time" id="tokyo-time">10:07:37 <small>PM</small></div>
       </div>
       <div class="city">
-        <div class="city/date">
+        <div class="city/date" id="london">
           <h2>London 🏴󠁧󠁢󠁥󠁮󠁧󠁿</h2>
-          <div class="date">February 13th, 2025</div>
+          <div class="date" id="london-date">February 13th, 2025</div>
         </div>
-        <div class="time">10:07:37 <small>PM</small></div>
+        <div class="time" id="london-time">10:07:37 <small>PM</small></div>
       </div>
     </div>
     <footer>
