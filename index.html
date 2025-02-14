@@ -14,41 +14,42 @@
     <div id="container">
       <h1>World Clock</h1>
 
-      <select>
+      <select id="city">
         <option selected value="">Select a city...</option>
-        <option value="">Paris 🇫🇷</option>
-        <option value="">Brisbane 🇦🇺</option>
-        <option value="">Los Angeles 🇺🇸</option>
-        <option value="">Aukland 🇳🇿</option>
+        <option value="Europe/Paris">Paris 🇫🇷</option>
+        <option value="Australia/Brisbane">Brisbane 🇦🇺</option>
+        <option value="America/Los_Angeles">Los Angeles 🇺🇸</option>
+        <option value="Pacific/Auckland">Aukland 🇳🇿</option>
       </select>
-
-      <div class="city">
-        <div class="city/date" id="sydney">
-          <h2>Sydney 🇦🇺</h2>
-          <div class="date" id="sydney-date">February 13th, 2025</div>
+      <div id="cities">
+        <div class="city">
+          <div class="city/date" id="sydney">
+            <h2 class="cityName" id="cityName">Sydney 🇦🇺</h2>
+            <div class="date" id="sydney-date">February 13th, 2025</div>
+          </div>
+          <div class="time" id="sydney-time">10:07:37 <small>PM</small></div>
         </div>
-        <div class="time" id="sydney-time">10:07:37 <small>PM</small></div>
-      </div>
-      <div class="city">
-        <div class="city/date" id="new-york">
-          <h2>New York 🇺🇸</h2>
-          <div class="date" id="new-york-date">February 13th, 2025</div>
+        <div class="city">
+          <div class="city/date" id="new-york">
+            <h2 class="cityName" id="cityName">New York 🇺🇸</h2>
+            <div class="date" id="new-york-date">February 13th, 2025</div>
+          </div>
+          <div class="time" id="new-york-time">10:07:37 <small>PM</small></div>
         </div>
-        <div class="time" id="new-york-time">10:07:37 <small>PM</small></div>
-      </div>
-      <div class="city">
-        <div class="city/date" id="tokyo">
-          <h2>Tokyo 🇯🇵</h2>
-          <div class="date" id="tokyo-date">February 13th, 2025</div>
+        <div class="city">
+          <div class="city/date" id="tokyo">
+            <h2 class="cityName" id="cityName">Tokyo 🇯🇵</h2>
+            <div class="date" id="tokyo-date">February 13th, 2025</div>
+          </div>
+          <div class="time" id="tokyo-time">10:07:37 <small>PM</small></div>
         </div>
-        <div class="time" id="tokyo-time">10:07:37 <small>PM</small></div>
-      </div>
-      <div class="city">
-        <div class="city/date" id="london">
-          <h2>London 🏴󠁧󠁢󠁥󠁮󠁧󠁿</h2>
-          <div class="date" id="london-date">February 13th, 2025</div>
+        <div class="city">
+          <div class="city/date" id="london">
+            <h2 class="cityName" id="cityName">London 🏴󠁧󠁢󠁥󠁮󠁧󠁿</h2>
+            <div class="date" id="london-date">February 13th, 2025</div>
+          </div>
+          <div class="time" id="london-time">10:07:37 <small>PM</small></div>
         </div>
-        <div class="time" id="london-time">10:07:37 <small>PM</small></div>
       </div>
     </div>
     <footer>
