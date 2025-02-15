@@ -1,7 +1,8 @@
 function updateTimes() {
-  let sydneyDateElement = document.querySelector("#sydney-date");
-  if (sydneyDateElement) {
-    let sydneyTimeElement = document.querySelector("#sydney-time");
+  let sydneyElement = document.querySelector("#sydney");
+  if (sydneyElement) {
+    let sydneyDateElement = sydneyElement.querySelector(".date");
+    let sydneyTimeElement = sydneyElement.querySelector(".time");
     let sydneyTime = moment().tz("Australia/Sydney");
 
     sydneyDateElement.innerHTML = sydneyTime.format("MMMM Do, YYYY");
@@ -9,10 +10,10 @@ function updateTimes() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
-
-  let newYorkDateElement = document.querySelector("#new-york-date");
-  if (newYorkDateElement) {
-    let newYorkTimeElement = document.querySelector("#new-york-time");
+  let newYorkElement = document.querySelector("#new-york");
+  if (newYorkElement) {
+    let newYorkDateElement = newYorkElement.querySelector(".date");
+    let newYorkTimeElement = newYorkElement.querySelector(".time");
     let newYorkTime = moment().tz("America/New_York");
 
     newYorkDateElement.innerHTML = newYorkTime.format("MMMM Do, YYYY");
@@ -20,10 +21,10 @@ function updateTimes() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
-
-  let tokyoDateElement = document.querySelector("#tokyo-date");
-  if (tokyoDateElement) {
-    let tokyoTimeElement = document.querySelector("#tokyo-time");
+  let tokyoElement = document.querySelector("#tokyo");
+  if (tokyoElement) {
+    let tokyoDateElement = tokyoElement.querySelector(".date");
+    let tokyoTimeElement = tokyoElement.querySelector(".time");
     let tokyoTime = moment().tz("Asia/Tokyo");
 
     tokyoDateElement.innerHTML = tokyoTime.format("MMMM Do, YYYY");
@@ -31,9 +32,10 @@ function updateTimes() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
-  let londonDateElement = document.querySelector("#london-date");
-  if (londonDateElement) {
-    let londonTimeElement = document.querySelector("#london-time");
+  let londonElement = document.querySelector("#london");
+  if (londonElement) {
+    let londonDateElement = londonElement.querySelector(".date");
+    let londonTimeElement = londonElement.querySelector(".time");
     let londonTime = moment().tz("Europe/London");
 
     londonDateElement.innerHTML = londonTime.format("MMMM Do, YYYY");
