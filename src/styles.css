@@ -24,9 +24,17 @@ h2 {
 footer {
   text-align: center;
   margin: 0;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 2px;
   color: rgba(0, 0, 0, 0.5);
+}
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 #container {
@@ -34,9 +42,25 @@ footer {
   margin: 60px auto;
   margin-bottom: 0;
   padding: 30px;
-  background-color: white;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: radial-gradient(
+    666px at 0.4% 48%,
+    rgb(202, 204, 227) 0%,
+    rgb(89, 89, 99) 97.5%
+  );
+  box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
   border-radius: 10px;
+}
+#clockImage {
+  font-size: 80px;
+  position: relative;
+  top: 10px;
+}
+#reset-page {
+  text-decoration: none;
+  background-color: #595963;
+  padding: 5px 15px;
+  color: white;
+  border-radius: 5px;
 }
 .city {
   display: flex;
